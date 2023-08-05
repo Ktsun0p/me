@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotoBot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/timer.js"></script>
+    <script src="js/sticky.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <meta property="og:image" content="img/icon.png">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Toto, music, LoL and more! invite me!">
+    <meta name="keywords" content="discord, discord.js, bot, discord bot, music, league of legends,lol">
+    <meta content="#F57BFF" data-react-helmet="true" name="theme-color">
+    
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav class="nav__hero">
+            <div class="container nav__container" id="navbar">
+                <div class="logo">
+                    <h2 class="logo__name"><a href="#home" class="link">TotoBot<span class="point">.</span></a></h2>
+                </div>
+                <div class="links">
+                    <a href="#about" class="link">About</a>
+                    <a href="#commands" class="link">Commands</a>
+                    <a href="#contact" class="link">Contact</a>
+                    <a href="vote.html" href="#vote" target="_blank" class="link link--active"><Button>Vote!</Button></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="container hero__main">  
+            <div class="hero__textos">
+                <h1 class="title">TotoBot 🐶</h1> 
+                <p class="copy">LoL and <span class="copy_active">music.</span></p>
+                <a href="invite.html" target="_blank" class="cta">Invite now!</a>
+                <a href="../cakebot/index.html" class="cta-ruined"><img src="img/pfp.png" class="imgg"></a>
+            </div>
+            <img src="img/icon.png" class="mockup">
+        </section>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+               <div class="container">
+                   <h2 class="subtitle">Who is Toto?<span class="point">.</span></h2>
+                   <p class="copy__section">Toto is a multipurpose Discord bot. Whose main feature is the interaction with the Riot Games Api of League Of Legends.<br> See LoL user profiles, play music and more!</p>
+                   <h2 class="subtitle">Why Toto?<span class="point">.</span></h2>
+                   <article class="container-reasons">
+                        <div class="reason">
+                            <img src="img/svg/bx-user-check.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">User friendly.</h3>
+                                <p class="reason__copy">TotoBot takes care and ensures that everything it shows is completely understandable even for a dog.</p>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <img src="img/svg/bx-badge-check.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">Security.</h3>
+                                <p class="reason__copy">TotoBot does not steal data or read messages, this make the bot totally safe.</p>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <img src="img/svg/bxl-discord-alt.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">Updates.</h3>
+                                <p class="reason__copy">TotoBot developer take the time to constantly add content to it.<br> Stay tuned on our <a href="support.html" class="text-link">support server</a>!</p>
+                            </div>
+                        </div>
+                   </article>
+                   <h2 class="subtitle">Next update in<span class="point">:</span></h2>
+                   <h2 id="demo"class="subtitle__cd"></h2>
+               </div>
+        </section>
+        <section class="commands" id="commands">
+            <div class="container">
+                <h2 class="subtitle">Commands<span class="point">.</span></h2>
+                <p class="copy__section">TotoBot only uses slash (<span class="mark">/</span>) commands. There is no need to get confused with prefixes!<br>Fields with [] are required, {} are optionals.</p>
+                <div class="table-container">
+                 <table class="table">
+                     <thead>
+                      <tr>
+                          <th>Command</th>
+                          <th>Description</th>
+                          <th>Usage</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                      <tr>
+                          <td data-label="Command">/summoner</td>
+                          <td data-label="Description">Get various information about a LoL player.</td>
+                          <td data-label="Usage">/summoner [player name]</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Command">/play</td>
+                          <td data-label="Description">Play music.</td>
+                          <td data-label="Usage">/play[song name]</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Command">/skip</td>
+                          <td data-label="Description">Skip the current song.</td>
+                          <td data-label="Usage">/skip</td>
+                        </tr>
+                          <tr>
+                            <td data-label="Command">/queue</td>
+                            <td data-label="Description">See the server music queue.</td>
+                            <td data-label="Usage">/queue</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/jump</td>
+                                <td data-label="Description">Jump to an specific song in the queue.</td>
+                                <td data-label="Usage">/jump [Number]</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/loop</td>
+                                <td data-label="Description">Loop the queue.</td>
+                                <td data-label="Usage">/loop [Song,Queue,Off]</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/remove</td>
+                                <td data-label="Description">Remove a song from the queue.</td>
+                                <td data-label="Usage">/remove [Number]</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/shuffle</td>
+                                <td data-label="Description">Shuffle the queue.</td>
+                                <td data-label="Usage">/shuffle</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/clear</td>
+                                <td data-label="Description">Clear the queue.</td>
+                                <td data-label="Usage">/clear</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/ping</td>
+                                <td data-label="Description">Pong.</td>
+                                <td data-label="Usage">/ping</td>
+                            </tr>
+                     </tbody>
+                </table>
+                </div>
+                </article>
+            </div>
+     </section>
+       <!-- <section class="server" id="donate">
+            <div class="container-bottom">
+            <h2 class="subtitle">Donate<span class="point">.</span></h2>
+             <p class="copy__section">By donating to CakeBot you help us keep this project alive.<br>By donating at least once you secure a position in the <span class="mark">k!donators</span> command. (And a place in the heart of the developer)</p>
+             <a href="donate.html" target="_blank">
+                <img src="img/donate.png">
+            </a>
+            </div>
+         </section>-->
+        <section class="server" id="contact">
+           <div class="container-bottom">
+           <h2 class="subtitle">Contact<span class="point">.</span></h2>
+            <p class="copy__section">TotoBot support will always be ready to solve your problems regarding this, join us!</p>
+            <article class="container-server">
+               <a href="support.html" target="_blank"><img src="https://discord.com/api/guilds/987115629293232228/widget.png?style=banner4"></a> 
+            </article>
+           </div>
+        </section>
+        <section class="server" id="vote">
+            <div class="container-bottom">
+                <h2 class="subtitle">Vote!<span class="point">.</span></h2>
+                 <p class="copy__section">TotoBot has a section on Top.gg bot page, by voting for it you support us immensely!<br>Top.gg ads are not related to us and we have no way of deactivating them.</p>
+                 <article class="container-server">
+                    <a href="https://top.gg/bot/953418385440509974" target="_blank">
+                        <img src="https://top.gg/api/widget/953418385440509974.svg" alt="Toto" class="top.gg"/>
+                        </a>
+                 </article>
+                </div>
+        </section>
+    </main>
+ <footer>
+    <div class="bg-light py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">kats.uno/totobot</p>
+        </div>
+      </div>
+ </footer>
+</body>
+</html>
