@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeBot 🎂</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/timer.js"></script>
+    <script src="js/sticky.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta property="og:image" content="./img/pfp.png">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="A simple Minecraft Discord Bot. CakeBot, your favorite cake flavor.">
+    <meta name="keywords" content="discord, discord.js, bot, discord bot, cake, cakebot, minecraft, filter">
+    <meta content="#F57BFF" data-react-helmet="true" name="theme-color">
+    
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav class="nav__hero">
+            <div class="container nav__container" id="navbar">
+                <div class="logo">
+                    <h2 class="logo__name"><a href="#home" class="link">CakeBot<span class="point">.</span></a></h2>
+                </div>
+                <div class="links">
+                    <a href="#about" class="link">About</a>
+                    <a href="#commands" class="link">Commands</a>
+                    <a href="#contact" class="link">Contact</a>
+                    <a href="invite.html" href="#invite" target="_blank" class="link link--active"><Button>Invite!</Button></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="container hero__main">  
+            <div class="hero__textos">
+                <h1 class="title">CakeBot 🎂</h1> 
+                <p class="copy">Your favorite <span class="copy_active">Cake Flavor.</span></p>
+                <a href="invite.html" target="_blank" class="cta">Invite now!</a>
+                <a href="../totobot/index.html" class="cta-ruined"><img src="img/totopng.png" class="imgg"></a>
+            </div>
+            <img src="img/pfp.png" class="mockup">
+        </section>
+    </header>
+
+    <main>
+        <section class="about" id="about">
+               <div class="container">
+                   <h2 class="subtitle">Who is CakeBot?<span class="point">.</span></h2>
+                   <p class="copy__section">CakeBot is a Minecraft dedicated Discord Bot. Whose main feature is the interaction with the Mojang API.<br> See user profiles, skins, servers and more!</p>
+                   <h2 class="subtitle">Why CakeBot?<span class="point">.</span></h2>
+                   <article class="container-reasons">
+                        <div class="reason">
+                            <img src="img/svg/bx-user-check.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">User friendly.</h3>
+                                <p class="reason__copy">CakeBot 🎂 takes care and ensures that everything it shows is completely understandable even for a cake.</p>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <img src="img/svg/bx-badge-check.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">Verified.</h3>
+                                <p class="reason__copy">CakeBot is verified by Discord, so have no fear, it doesn't bite.</p>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <img src="img/svg/bxl-discord-alt.svg" class="reason__img">
+                            <div class="reason__text">
+                                <h3 class="reason__title">Updates.</h3>
+                                <p class="reason__copy">CakeBot developer take the time to constantly add content to it.<br> Stay tuned on our <a href="support.html" class="text-link">support server</a>!</p>
+                            </div>
+                        </div>
+                   </article>
+                   <h2 class="subtitle">Next update in<span class="point">:</span></h2>
+                   <h2 id="demo"class="subtitle__cd"></h2>
+               </div>
+        </section>
+        <section class="commands" id="commands">
+            <div class="container">
+                <h2 class="subtitle">Commands<span class="point">.</span></h2>
+                <p class="copy__section">CakeBot only uses slash (<span class="mark">/</span>) commands. There is no need to get confused with prefixes!<br>Fields with [] are required, {} are optionals.</p>
+                <div class="table-container">
+                 <table class="table">
+                     <thead>
+                      <tr>
+                          <th>Command</th>
+                          <th>Description</th>
+                          <th>Usage</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                      <tr>
+                          <td data-label="Command">/player info</td>
+                          <td data-label="Description">Get various information about a Minecraft player.</td>
+                          <td data-label="Usage">/player info [player name]</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Command">/player head</td>
+                          <td data-label="Description">Get the head of a minecraft player skin.</td>
+                          <td data-label="Usage">/player head [player name]</td>
+                        </tr>
+                        <tr>
+                          <td data-label="Command">/player skin</td>
+                          <td data-label="Description">Get the skin of a minecraft player.</td>
+                          <td data-label="Usage">/player skin [player name]</td>
+                        </tr>
+                          <tr>
+                            <td data-label="Command">/server</td>
+                            <td data-label="Description">See the status of a minecraft server.</td>
+                            <td data-label="Usage">/server [server ip]</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Command">/mob</td>
+                                <td data-label="Description">Sends a random minecraft mob image.</td>
+                                <td data-label="Usage">/mob</td>
+                            </tr>
+                          <tr>
+                               <tr>
+                                <td data-label="Command">/animal</td>
+                                <td data-label="Description">Sends a random animal picture!.</td>
+                                <td data-label="Usage">/animal [cat,dog,fox]</td>
+                            </tr>
+                          <tr>
+                                                                   
+                                <td data-label="Command">/invite</td>
+                                <td data-label="Description">Invite CakeBot to your server!</td>
+                                <td data-label="Usage">/invite</td>
+                            </tr>
+                     </tbody>
+                </table>
+                </div>
+                </article>
+            </div>
+     </section>
+       <!-- <section class="server" id="donate">
+            <div class="container-bottom">
+            <h2 class="subtitle">Donate<span class="point">.</span></h2>
+             <p class="copy__section">By donating to CakeBot you help us keep this project alive.<br>By donating at least once you secure a position in the <span class="mark">k!donators</span> command. (And a place in the heart of the developer)</p>
+             <a href="donate.html" target="_blank">
+                <img src="img/donate.png">
+            </a>
+            </div>
+         </section>-->
+        <section class="server" id="contact">
+           <div class="container-bottom">
+           <h2 class="subtitle">Contact<span class="point">.</span></h2>
+            <p class="copy__section">CakeBot support will always be ready to solve your problems regarding this, join us!</p>
+            <article class="container-server">
+               <a href="support.html" target="_blank"><img src="https://discord.com/api/guilds/908894795152367616/widget.png?style=banner4"></a> 
+            </article>
+           </div>
+        </section>
+        <section class="server" id="vote">
+            <div class="container-bottom">
+                <h2 class="subtitle">Vote!<span class="point">.</span></h2>
+                 <p class="copy__section">CakeBot has a section on Top.gg bot page, by voting for it you support us immensely!<br>Top.gg ads are not related to us and we have no way of deactivating them.</p>
+                 <article class="container-server">
+                    <a href="https://top.gg/bot/763116966566166558" target="_blank">
+                        <img src="https://top.gg/api/widget/763116966566166558.svg" alt="CakeBot 🎂" class="top.gg"/>
+                        </a>
+                 </article>
+                </div>
+        </section>
+    </main>
+ <footer>
+    <div class="bg-light py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">kats.uno/cakebot</p>
+        </div>
+      </div>
+ </footer>
+</body>
+</html>
