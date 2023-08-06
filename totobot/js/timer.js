@@ -17,6 +17,6 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Now! Check information <a href='/support.html'target='_blank' class='text-link'>here</a><span class='point'>.</span>";
+    document.getElementById("demo").innerHTML = "Now! Check information <a href='support.html'target='_blank' class='text-link'>here</a><span class='point'>.</span>";
   }
 }, 1000);
