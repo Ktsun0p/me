@@ -1,0 +1,191 @@
+@font-face{
+    font-family: DiscordBots;
+    src: url(../../cakebot/font/Berlin\ Sans\ FB\ Demi\ Bold.ttf);
+}
+@font-face{
+    font-family: LolApiFont;
+    src: url(../fonts/BeaufortforLOL-Bold.otf);
+}
+
+@font-face{
+    font-family: tagsFont;
+    src: url(../fonts/Uni\ Sans\ Heavy.otf);
+}
+
+@font-face{
+    font-family: PixelFont;
+    src: url(../fonts/PixelifySans-Bold.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(219,29,253,1) 50%, rgba(240,167,192,1) 100%);
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.header-title{
+    font-size: 50px;
+    font-family: PixelFont;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+.description{
+    font-size: 25px;
+    font-family: PixelFont;
+    text-align: center;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: left;
+    max-width: 425px;
+    position: relative;
+}
+
+.project-tags {
+    background-color: #767ee9; 
+    color: white; 
+    font-family: tagsFont;
+    padding: 2px;
+    border: 2px solid black; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.project-title{
+    text-align: center;
+    color: white;
+}
+
+.project-description{
+    text-align: center;
+}
+
+.project-card:last-child {
+    margin-bottom: 40px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+#redirect{
+    background-color: limegreen; 
+    color: white; 
+    font-family: tagsFont;
+    border: 2px solid black; 
+    border-radius: 5px; 
+
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.project-card h2 {
+    color: #333;
+}
+
+#cake-bot {
+    background: linear-gradient(to bottom, #eecee6, #db538a); 
+    background-color: #eecee6; 
+    color: white; 
+    border: 1px solid #eecee6; 
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    max-width: 425px;
+}
+
+#toto-bot {
+    background-color: #dec474;
+    color: white;
+    border: 1px solid #caffea;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    max-width: 425px;
+
+}
+
+
+#cake-bot .project-description, #toto-bot .project-description{
+    font-size: 20px;
+    font-family: DiscordBots;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#cake-bot .project-title, #toto-bot .project-title{
+    font-size: 40px;
+    font-family: DiscordBots;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+#lol-api{
+    background: linear-gradient(to bottom, #007a9a, #003d4d); 
+    background-color: #eecee6; 
+    color: white; 
+    border: 1px solid #eecee6; 
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: left;
+    max-width: 425px;
+}
+
+
+#lol-api .project-title{
+    font-size: 40px;
+    font-family: LolApiFont;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+
+#lol-api .project-description{
+    font-size: 20px;
+    font-family: LolApiFont;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.footer{
+    text-decoration: none;
+}
+
+.text-footer {
+    font-size: 20px;
+    font-family: PixelFont;
+    text-align: center;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
