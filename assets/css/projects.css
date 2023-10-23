@@ -16,7 +16,9 @@
     font-family: PixelFont;
     src: url(../fonts/PixelifySans-Bold.ttf);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -84,19 +86,19 @@ body {
     margin-bottom: 40px;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-}
-
 #redirect{
     background-color: limegreen; 
     color: white; 
     font-family: tagsFont;
     border: 2px solid black; 
+    transition: transform 0.2s;
     border-radius: 5px; 
-
 }
 
+#redirect a{
+   text-decoration: none;
+   color: white;
+}
 .project-card img {
     max-width: 100%;
     height: auto;
@@ -178,14 +180,23 @@ body {
     font-family: LolApiFont;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-.footer{
+.project-description a{
+    text-decoration: none;
+    color: gold;
+}
+.footer a{
     text-decoration: none;
 }
 
 .text-footer {
-    font-size: 20px;
+    font-size: 25px;
     font-family: PixelFont;
+    transition: transform 0.2s;
     text-align: center;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    color: black;
+}
+
+#redirect:hover, #footer-text:hover, .project-card:hover {
+    transform: scale(1.05);
 }
