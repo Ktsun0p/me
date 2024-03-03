@@ -16,6 +16,10 @@
     font-family: PixelFont;
     src: url(../fonts/PixelifySans-Bold.ttf);
 }
+@font-face{
+    font-family: Youtube;
+    src: url(../fonts/youtube-sans-medium.ttf);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -110,6 +114,27 @@ body {
     color: #333;
 }
 
+.project-description a{
+    text-decoration: none;
+    color: gold;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.text-footer {
+    font-size: 25px;
+    font-family: PixelFont;
+    transition: transform 0.2s;
+    text-align: center;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    color: black;
+}
+
+#redirect:hover, #footer-text:hover, .project-card:hover {
+    transform: scale(1.05);
+}
+
 #cake-bot {
     background: linear-gradient(to bottom, #eecee6, #db538a); 
     background-color: #eecee6; 
@@ -180,23 +205,30 @@ body {
     font-family: LolApiFont;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.project-description a{
-    text-decoration: none;
-    color: gold;
-}
-.footer a{
-    text-decoration: none;
-}
 
-.text-footer {
-    font-size: 25px;
-    font-family: PixelFont;
+#yt-downloader{
+    background: linear-gradient(to bottom, #db538a, #767ee9); 
+    background-color: #eecee6; 
+    color: white; 
+    border: 1px solid #eecee6; 
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     transition: transform 0.2s;
-    text-align: center;
-    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-    color: black;
+    text-align: left;
+    max-width: 425px;
 }
 
-#redirect:hover, #footer-text:hover, .project-card:hover {
-    transform: scale(1.05);
+#yt-downloader .project-title{
+    font-size: 40px;
+    font-family: Youtube;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+#yt-downloader .project-description{
+    font-size: 25px;
+    font-family: Youtube;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
