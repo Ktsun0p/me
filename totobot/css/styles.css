@@ -1,8 +1,12 @@
 @import url(//db.onlinewebfonts.com/c/b6539b6d3432c623d8d4f9cc2a29589e?family=Berlin+Sans+FB+Demi);
 @font-face{
-    font-family: myFirstFont;
+    font-family: BerlinSans;
     border: #1A1B1F;
     src: url(../font/Berlin\ Sans\ FB\ Demi\ Bold.ttf);
+}
+@font-face{
+    font-family: PixelSans;
+    src: url(../../assets/fonts/PixelifySans-Bold.ttf);
 }
 :root{
     --gold1:#F4BD76;
@@ -27,7 +31,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: myFirstFont;
+    font-family: BerlinSans;
    
     
 }
@@ -399,147 +403,6 @@ body{
 }
 
 
-.testimony{
-    background: #fafafa;
-}
-
-.testimony-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.testimony__card{
-    width: 30%;
-    height: 500px;
-    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
-    border-radius: 10px;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.testimony__img{
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    object-fit: fill;
-    object-position: center top;
-}
-
-.testimony__copy{
-    position: absolute;
-    bottom: 20px;
-    left: 5%;
-    width: 90%;
-    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
-    color: #fff;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: var(--shadow) var(--color_shadow);
-    padding: 15px 8px;
-    display: flex;
-    align-items: center;
-}
-
-.testimony__copy--modifier{
-    background: none;
-    box-shadow: none;
-}
-
-.testimony__logo{
-    font-size: 40px;
-    margin-right: 15px;
-    display: inline-block;
-}
-
-.testimony__name{
-    font-size: 24px;
-    line-height:28px;
-}
-
-.testimony__position{
-    color: var(--gray);
-}
-
-.testimony__text{
-    padding: 40px 0;
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.google__logo{
-    margin-bottom: 20px;
-}
-
-
-.testimony__history{
-    font-size: 21px;
-    font-weight: 300;
-}
-
-
-.testimony__info{
-    width: 70%;
-}
-
-.logo--picture{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-    object-position: center top;
-}
-
-/* check */
-
-.check{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
-.check__item{
-    width: 30%;
-    padding-right: 10px;
-    display: flex;
-    border-right: 2px solid var(--black2);
-}
-
-.bx-check{
-    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    margin-right: 20px;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 40px;
-}
-
-.check__number{
-    font-weight: 700;
-}
-
-.check__copy{
-    font-weight: 300;
-}
-
-.newsletter{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 40px;
-    height: auto;
-    font-family: inherit;
-    position: relative;
-    border-radius: 6px;
-}
-
-
-
 @media screen and (max-width:900px){
     .nav__hero{
         z-index:2;
@@ -582,22 +445,7 @@ body{
         width: 42%;
     }
 
-    .testimony-container{
-        justify-content: space-evenly;
-    }
 
-    .testimony__card{
-        width: 45%;
-    }
-
-    .check__item{
-        width: 45%;
-        margin-bottom: 35px;
-    }
-
-    .newsletter{
-        width: 80%;
-    }
     .table thead{
         display: none;
     }
@@ -615,7 +463,6 @@ body{
     .table td:before{
         content:  attr(data-label);
         position: absolute;
-       
         Left: 0;
         width: 50%;
         padding-left: 15%;
@@ -721,10 +568,6 @@ body{
         font-size: 35px;
     }
 
-    .card__button{
-        width: 100%;
-    }
-
     .background{
         width: 65%;
         margin-bottom: 40px;
@@ -733,29 +576,13 @@ body{
     .background__copy{
         display: none;
     }
-
-    .testimony__card{
-        width: 65%;
-    }
-
-    .testimony__name{
-        font-size: 20px;
-    }
-
-    .container--modifier{
-        width: 80%;
-    }
-
-    .item__contact{
-        width: 100%;
-        padding: 30px 0;
-    }
 }
 footer{
     background-color: rgb(70, 70, 70);
-     text-align: center;
-     color: white;
-     font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: PixelSans;
+    font-size: 30px;
 }
 
 
