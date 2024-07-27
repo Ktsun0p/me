@@ -75,13 +75,16 @@ body {
     border: 2px solid black; 
     border-radius: 5px; 
     text-align: center; 
+    text-decoration: none;
 }
 
 .project-title{
     text-align: center;
     color: white;
 }
-
+a{
+text-decoration: none;
+}
 .project-description{
     text-align: center;
 }
@@ -97,6 +100,7 @@ body {
     border: 2px solid black; 
     transition: transform 0.2s;
     border-radius: 5px; 
+    text-decoration: none;
 }
 
 #redirect a{
@@ -133,6 +137,7 @@ body {
 
 #redirect:hover, #footer-text:hover, .project-card:hover {
     transform: scale(1.05);
+
 }
 
 #cake-bot {
