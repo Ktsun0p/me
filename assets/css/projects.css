@@ -46,13 +46,6 @@ body {
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
 .project-card {
     background-color: #fff;
     border: 1px solid #ccc;
